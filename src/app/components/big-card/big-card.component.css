@@ -1,0 +1,45 @@
+.container {
+    background-image: url("src/assets/chatgpt.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50rem;
+    height: 53rem;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 4rem;
+    text-align: left;
+    font-size: 3rem;
+}
+
+h2 > span {
+    background-color: #f2f2f2;
+    color: #111111;
+    box-shadow: -0.3rem 0 0 0.4rem #f2f2f2,
+                0.3rem 0 0 0.4rem #f2f2f2,
+                0 0 0 0.4rem #f2f2f2;
+    box-decoration-break: clone;
+}
+
+.left-info {
+    margin: 1.5rem;
+    float: left;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.right-title {
+    margin: 1.5rem;
+    float: right;
+    max-width: 40%;
+    text-align: left;
+}
+
