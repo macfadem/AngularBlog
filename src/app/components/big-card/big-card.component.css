@@ -1,12 +1,17 @@
 .container {
-    background-image: url("src/assets/chatgpt.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
     width: 50rem;
-    height: 53rem;
-    padding: 1rem;
+    height: 55rem;
     margin-right: 1rem;
+    overflow: hidden;
+}
+
+.container img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -28,6 +33,9 @@ h2 > span {
 }
 
 .left-info {
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
     margin: 1.5rem;
     float: left;
     padding: 0.5rem;
@@ -37,6 +45,9 @@ h2 > span {
 }
 
 .right-title {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
     margin: 1.5rem;
     float: right;
     max-width: 40%;

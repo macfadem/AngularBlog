@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,11 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  
-  cardImage:string = 'src/assets/chatgpt.jpeg'
-  cardTitle:string = 'How ChatGPT can change medical education'
-  cardText:string = 'ChatGPT'
-  cardLink:string = ''
+  @Input() cardImage:string = ''
+  @Input() cardTitle:string = ''
+  @Input() cardText:string = ''
+  @Input() cardLink:string = ''
 
   constructor() { }
 
